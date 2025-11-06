@@ -141,6 +141,7 @@
     <Content Include="cssjs\mediaqueries.css" />
     <Content Include="cssjs\script.js" />
     <Content Include="cssjs\style.css" />
+    <Content Include="Default.aspx" />
     <Content Include="edit.aspx" />
     <Content Include="login.aspx" />
     <Content Include="main.aspx" />
@@ -148,6 +149,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="class\Profile.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="edit.aspx.cs">
       <DependentUpon>edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
